@@ -376,6 +376,10 @@
     );
     --color-sky-slate-500: #e7fafe;
     --color-sky-slate-100: #dbedf1;
+    --color-breakfast-color: #ebebe8;
+    --color-vegan-color: #f8fcf6;
+    --color-meat-color: #fcf4f3;
+    --color-dessert-color: #fef6e8;
   }
 }
 @layer base {
@@ -552,8 +556,14 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .my-6 {
+    margin-block: calc(var(--spacing) * 6);
+  }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-7 {
+    margin-top: calc(var(--spacing) * 7);
   }
   .mt-11 {
     margin-top: calc(var(--spacing) * 11);
@@ -636,6 +646,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
+  }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
@@ -648,6 +661,9 @@
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
+  }
+  .rounded-\[\.5rem\] {
+    border-radius: .5rem;
   }
   .rounded-\[\.7rem\] {
     border-radius: .7rem;
@@ -690,17 +706,26 @@
   .bg-black {
     background-color: var(--color-black);
   }
+  .bg-breakfast-color {
+    background-color: var(--color-breakfast-color);
+  }
+  .bg-dessert-color {
+    background-color: var(--color-dessert-color);
+  }
   .bg-gray-50 {
     background-color: var(--color-gray-50);
   }
-  .bg-red-300 {
-    background-color: var(--color-red-300);
+  .bg-meat-color {
+    background-color: var(--color-meat-color);
   }
   .bg-sky-slate-100 {
     background-color: var(--color-sky-slate-100);
   }
   .bg-sky-slate-500 {
     background-color: var(--color-sky-slate-500);
+  }
+  .bg-vegan-color {
+    background-color: var(--color-vegan-color);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -726,14 +751,24 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
   }
   .py-11 {
     padding-block: calc(var(--spacing) * 11);
   }
   .text-center {
     text-align: center;
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
   .text-6xl {
     font-size: var(--text-6xl);
@@ -754,6 +789,10 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
