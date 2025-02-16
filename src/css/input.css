@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @theme {
-     --color-avocado-100: oklch(0.99 0 0);
-     --color-redsky-300: #d91656;
+     /* theme  */
+     --color-sky-slate-500: #e7fafe;
+     --color-sky-slate-100: #dbedf1;
 }
