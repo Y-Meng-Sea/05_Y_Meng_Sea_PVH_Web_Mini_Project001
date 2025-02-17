@@ -13,5 +13,395 @@
           />
           <title>Foodieland</title>
      </head>
-     <body></body>
+     <body>
+          <!-- navbar -->
+          <nav class="bg-white dark:bg-gray-900 sticky w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+               <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse"> Foodieland </a>
+                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                         <div class="px-4 py-2 text-center flex gap-8 text-xl cursor-pointer">
+                              <i class="fa-brands fa-facebook-f"></i>
+                              <i class="fa-brands fa-twitter"></i>
+                              <i class="fa-brands fa-instagram"></i>
+                         </div>
+                         <button
+                              data-collapse-toggle="navbar-sticky"
+                              type="button"
+                              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                              aria-controls="navbar-sticky"
+                              aria-expanded="false"
+                         >
+                              <span class="sr-only">Open main menu</span>
+                              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                   <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M1 1h15M1 7h15M1 13h15"
+                                   />
+                              </svg>
+                         </button>
+                    </div>
+                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                         <ul
+                              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+                         >
+                              <li>
+                                   <a
+                                        href="#"
+                                        class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                        >Home</a
+                                   >
+                              </li>
+                              <li>
+                                   <a
+                                        href="#"
+                                        class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                        >About</a
+                                   >
+                              </li>
+                              <li>
+                                   <a
+                                        href="#"
+                                        class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                        >Services</a
+                                   >
+                              </li>
+                              <li>
+                                   <a
+                                        href="#"
+                                        class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                        >Contact</a
+                                   >
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </nav>
+          <!-- hero section -->
+          <section class="flex mx-20 mt-12 bg-red-300 rounded-3xl">
+               <div class="w-1/2 bg-sky-slate-500 p-12 rounded-bl-3xl rounded-tl-3xl">
+                    <a class="no-underline inline-flex px-4 py-2 bg-amber-100 rounded-3xl" href="#">
+                         <img src="./assets/icons/recipes.png" alt="recipes icon" />
+                         <p class="ml-2">Hot Recipes</p>
+                    </a>
+                    <h1 class="text-6xl py-11">Spicy delicious <br />chicken wings</h1>
+                    <p class="text-gray-500">
+                         Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim
+                         ad minim
+                    </p>
+                    <div class="flex mt-11">
+                         <a class="inline-flex bg-sky-slate-100 px-4 py-2 rounded-3xl" href="#">
+                              <img src="./assets/icons/Timer.png" alt="timer icon" />
+                              <p class="text-gray-500 ml-2">30 Minutes</p>
+                         </a>
+                         <a class="inline-flex bg-sky-slate-100 px-4 py-2 rounded-3xl ml-4" href="#">
+                              <img src="./assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                              <p class="text-gray-500 ml-2">Chicken</p>
+                         </a>
+                    </div>
+                    <div class="flex mt-20 justify-between">
+                         <div class="flex">
+                              <img class="mr-4" src="./assets/images/profile.png" alt="" />
+                              <div>
+                                   <p class="font-bold">Jonh Smith</p>
+                                   <p class="text-gray-500 text-xs">15 March 2022</p>
+                              </div>
+                         </div>
+                         <a href="#" class="px-8 py-2 bg-black inline-flex items-center rounded-[.7rem]">
+                              <p class="text-white text-xs mr-2">View Recipes</p>
+                              <img class="w-[16px] h-[16px]" src="./assets/icons/PlayCircle.png" alt="play icon" />
+                         </a>
+                    </div>
+               </div>
+               <div class="w-1/2">
+                    <img class="w-full h-full object-cover rounded-tr-3xl rounded-br-3xl" src="./assets/images/chicken.png" alt="" />
+               </div>
+          </section>
+          <!-- Categories secction -->
+          <section class="flex flex-col mx-20 mt-20">
+               <div class="flex justify-between items-center w-full my-6">
+                    <p class="text-3xl font-extrabold">Categories</p>
+                    <a class="px-4 py-2 bg-sky-slate-500 rounded-[.5rem]" href="#">View All Categories</a>
+               </div>
+               <div class="flex justify-between gap-2.5">
+                    <div class="flex flex-col items-center justify-center px-10 py-6 rounded-3xl bg-breakfast-color">
+                         <img src="./assets/images/categori-image/rice.png" alt="" />
+                         <p class="font-bold mt-7">Breakfast</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center px-10 py-6 rounded-3xl bg-vegan-color">
+                         <img src="./assets/images/categori-image/lattus.png" alt="" />
+                         <p class="font-bold mt-7">Vegan</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center px-10 py-6 rounded-3xl bg-meat-color">
+                         <img src="./assets/images/categori-image/meat.png" alt="" />
+                         <p class="font-bold mt-7">Meat</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center px-10 py-6 rounded-3xl bg-dessert-color">
+                         <img src="./assets/images/categori-image/dessert.png" alt="" />
+                         <p class="font-bold mt-7">Dessert</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center px-10 py-6 rounded-3xl bg-breakfast-color">
+                         <img src="./assets/images/categori-image/sandwich.png" alt="" />
+                         <p class="font-bold mt-7">Lunch</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center px-10 py-6 rounded-3xl bg-breakfast-color">
+                         <img src="./assets/images/categori-image/chocolate.png" alt="" />
+                         <p class="font-bold mt-7">chocolate</p>
+                    </div>
+               </div>
+          </section>
+          <!-- simple and testy recipes -->
+          <section class="mx-20 my-12">
+               <h1 class="text-center font-extrabold text-6xl">Simple and tasty recipes</h1>
+               <p class="text-center text-gray-500 mt-10 mb-[10rem] text-2xl">
+                    Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut <br />
+                    labore et dolore magna aliqut enim ad minim
+               </p>
+               <!-- grid card recipes -->
+               <div class="grid sm:grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                    <!-- row 1 -->
+                    <div class="max-w-sm rounded-3xl bg-sky-slate-500">
+                         <img class="object-center w-full rounded-3xl" src="./assets/images/tasty-recipes/burger.png" alt="Cheese burger image" />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Big and Juicy Wagyu Beef Cheesebuger
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex px-4 py-2" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex px-4 py-2 ml-4" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="max-w-sm rounded-3xl bg-sky-slate-500">
+                         <img class="object-center w-full rounded-3xl" src="./assets/images/tasty-recipes/salmon.png" alt="Salmon image" />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Fresh Lime Roasted Salmon with Ginger Sauce
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex px-4 py-2" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex px-4 py-2 ml-4" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="max-w-sm rounded-3xl bg-sky-slate-500">
+                         <img class="object-center w-full rounded-3xl" src="./assets/images/tasty-recipes/pencake.png" alt="Pancake image" />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Strawberry Oatmeal Pancake with Honey Syrup
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex px-4 py-2" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex px-4 py-2 ml-4" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- row 2 -->
+                    <div class="max-w-sm rounded-3xl bg-sky-slate-500">
+                         <img class="object-center w-full rounded-3xl" src="./assets/images/tasty-recipes/salad.png" alt="Salad image" />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Fresh and Healthy Mixed Mayonnaise Salad
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex px-4 py-2" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex px-4 py-2 ml-4" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="max-w-sm rounded-3xl bg-sky-slate-500">
+                         <img class="object-center w-full rounded-3xl" src="./assets/images/tasty-recipes/meatball.png" alt="Meat ball image" />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Chicken Meatballs with Cream Cheese
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex px-4 py-2" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex px-4 py-2 ml-4" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <!-- ads image -->
+                    <div class="max-w-sm">
+                         <img class="object-center w-full h-full" src="./assets/images/tasty-recipes/Ads.png" alt="Ads Picture " />
+                    </div>
+                    <!-- row 3 -->
+                    <div class="max-w-sm rounded-3xl bg-sky-slate-500">
+                         <img
+                              class="object-center w-full rounded-3xl"
+                              src="./assets/images/tasty-recipes/fruit-pancake.png"
+                              alt="fruity pancake image"
+                         />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Fruity Pancake with Orange & Blueberry
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex px-4 py-2" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex px-4 py-2 ml-4" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="max-w-sm rounded-3xl bg-sky-slate-500">
+                         <img
+                              class="object-center w-full rounded-3xl"
+                              src="./assets/images/tasty-recipes/chicken-rice.png"
+                              alt="Chicken rice pot image"
+                         />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        The Best Easy One Pot Chicken and Rice
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex px-4 py-2" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex px-4 py-2 ml-4" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="max-w-sm rounded-3xl bg-sky-slate-500">
+                         <img class="object-center w-full rounded-3xl" src="./assets/images/tasty-recipes/spageti.png" alt="Pasta image" />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        The Creamiest Creamy Chicken and Bacon Pasta
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex px-4 py-2" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex px-4 py-2 ml-4" href="#">
+                                        <img class="w-[px] h-[24px]" src="./assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <!-- banner section -->
+          <section class="flex flex-col mx-20 mt-20">
+               <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+                    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-center md:gap-8">
+                         <div>
+                              <div class="max-w-lg md:max-w-none">
+                                   <h2 class="text-2xl font-semibold text-gray-900 sm:text-3xl">Everyone can be a <br />chef in their own kitchen</h2>
+
+                                   <p class="mt-4 text-gray-700">
+                                        Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                        magna aliqut enim ad minim
+                                   </p>
+                                   <button class="bg-black text-white px-10 py-4 rounded-2xl mt-12 cursor-pointer">Learn More</button>
+                              </div>
+                         </div>
+                         <div class="bg-linear-to-b from-linea-top to-linea-bottom rounded-3xl relative">
+                              <img src="./assets/images/chief.png" class="rounded -translate-x-[10%]" alt="" />
+                              <img
+                                   class="absolute bottom-[15%] -translate-[50%]"
+                                   src="./assets/images/banner-ingredients/tomato.png"
+                                   alt="tomato image"
+                              />
+                              <img class="absolute top-[10%] left-[5%]" src="./assets/images/banner-ingredients/mutton.png" alt="mutton image" />
+                              <img class="absolute top-[15%] right-[25%]" src="./assets/images/banner-ingredients/onion.png" alt="onion image" />
+                              <img class="absolute top-[25%] right-[5%]" src="./assets/images/banner-ingredients/lettuce.png" alt="lettuce image" />
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <!-- footer -->
+          <footer class="bg-white rounded-lg shadow-sm dark:bg-gray-900 m-4">
+               <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                    <div class="sm:flex sm:items-center sm:justify-between">
+                         <a href="#" class="flex flex-col mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                              <p class="text-2xl font-semibold whitespace-nowrap dark:text-white mb-4">
+                                   Foodieland<span class="text-orange-500">.</span>
+                              </p>
+                              <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetuipisicing elit,</p>
+                         </a>
+                         <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-700 sm:mb-0 dark:text-gray-400">
+                              <li>
+                                   <a href="#" class="hover:underline me-4 md:me-6">Recipes</a>
+                              </li>
+                              <li>
+                                   <a href="#" class="hover:underline me-4 md:me-6">Blog</a>
+                              </li>
+                              <li>
+                                   <a href="#" class="hover:underline me-4 md:me-6">Contact</a>
+                              </li>
+                              <li>
+                                   <a href="#" class="hover:underline">About us</a>
+                              </li>
+                         </ul>
+                    </div>
+                    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                    <div class="flex items-center justify-center relative">
+                         <p class="text-sm text-gray-500">&copy; 2025 Y MENG SEA. Powered by <span class="text-orange-500">KSHRD</span></p>
+                         <div class="px-4 py-2 text-xl cursor-pointer absolute right-10">
+                              <i class="fa-brands fa-facebook-f px-3"></i>
+                              <i class="fa-brands fa-twitter px-3"></i>
+                              <i class="fa-brands fa-instagram px-3"></i>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+     </body>
 </html>
