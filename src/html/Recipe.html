@@ -13,5 +13,474 @@
           <link rel="stylesheet" href="../css/output.css" />
           <title>Recipe Details</title>
      </head>
-     <body></body>
+     <body>
+          <!-- navbar -->
+          <nav class="bg-white dark:bg-gray-900 sticky w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+               <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse"> Foodieland </a>
+                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                         <div class="px-4 py-2 text-center flex gap-8 text-xl cursor-pointer">
+                              <i class="fa-brands fa-facebook-f"></i>
+                              <i class="fa-brands fa-twitter"></i>
+                              <i class="fa-brands fa-instagram"></i>
+                         </div>
+                         <button
+                              data-collapse-toggle="navbar-sticky"
+                              type="button"
+                              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                              aria-controls="navbar-sticky"
+                              aria-expanded="false"
+                         >
+                              <span class="sr-only">Open main menu</span>
+                              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                   <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M1 1h15M1 7h15M1 13h15"
+                                   />
+                              </svg>
+                         </button>
+                    </div>
+                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                         <ul
+                              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+                         >
+                              <li>
+                                   <a
+                                        href="#"
+                                        class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                        >Home</a
+                                   >
+                              </li>
+                              <li>
+                                   <a
+                                        href="#"
+                                        class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                        >About</a
+                                   >
+                              </li>
+                              <li>
+                                   <a
+                                        href="#"
+                                        class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                        >Services</a
+                                   >
+                              </li>
+                              <li>
+                                   <a
+                                        href="#"
+                                        class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                        >Contact</a
+                                   >
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </nav>
+          <!-- recipes section -->
+          <section class="my-5 flex flex-col w-full p-12">
+               <div class="flex justify-between gap-5">
+                    <div class="flex h-auto flex-col w-[60%] gap-5">
+                         <h1 class="text-5xl">Health Japanes Fried Rice</h1>
+                         <div class="flex gap-5 my-5">
+                              <div class="flex gap-5 pr-5 border-r border-gray-400">
+                                   <img src="../../assets/images/profile.png" alt="" />
+                                   <div>
+                                        <h5 class="font-bold">Jonh Smith</h5>
+                                        <p class="text-gray-600">15 march 2025</p>
+                                   </div>
+                              </div>
+                              <div class="flex items-center gap-5 pr-5 border-r border-gray-400">
+                                   <img class="w-[24px] h-[24px]" src="../../assets/icons/Timer.png" alt="" />
+                                   <div>
+                                        <h5 class="font-bold">PREP TIME</h5>
+                                        <p class="text-gray-600">15 minutes</p>
+                                   </div>
+                              </div>
+                              <div class="flex items-center gap-5 pr-5 border-r border-gray-400">
+                                   <img class="w-[24px] h-[24px]" src="../../assets/icons/Timer.png" alt="" />
+                                   <div>
+                                        <h5 class="font-bold">COOK TIME</h5>
+                                        <p class="text-gray-600">15 minutes</p>
+                                   </div>
+                              </div>
+                              <div class="flex items-center gap-5 pr-5">
+                                   <img class="w-[24px] h-[24px]" src="../../assets/icons/ForkKnife.png" alt="" />
+                                   <div>
+                                        <p class="text-gray-600">Chicken</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- video blog of recipes -->
+                         <div class="relative">
+                              <img class="rounded-3xl" src="../../assets/images/recipes-detail/frice-rice.png" alt="" />
+                              <div class="absolute top-1/2 left-1/2 -translate-1/2">
+                                   <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <foreignObject x="-20" y="-20" width="160" height="160"
+                                             ><div
+                                                  xmlns="http://www.w3.org/1999/xhtml"
+                                                  style="
+                                                       backdrop-filter: blur(10px);
+                                                       clip-path: url(#bgblur_0_1_296_clip_path);
+                                                       height: 100%;
+                                                       width: 100%;
+                                                  "
+                                             ></div
+                                        ></foreignObject>
+                                        <circle data-figma-bg-blur-radius="20" cx="60" cy="60" r="60" fill="white" fill-opacity="0.8" />
+                                        <path
+                                             d="M73 58.2679C74.3333 59.0378 74.3333 60.9622 73 61.7321L55 72.1244C53.6667 72.8942 52 71.9319 52 70.3923L52 49.6077C52 48.0681 53.6667 47.1058 55 47.8756L73 58.2679Z"
+                                             fill="#181945"
+                                        />
+                                        <defs>
+                                             <clipPath id="bgblur_0_1_296_clip_path">
+                                                  <circle transform="translate(20 20)" cx="60" cy="60" r="60" />
+                                             </clipPath>
+                                        </defs>
+                                   </svg>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="flex w-[40%] flex-col">
+                         <div class="flex py-10 gap-5">
+                              <div class="text-center">
+                                   <div class="bg-sky-slate-500 p-5 rounded-full">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M6 9V2H18V9" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                             <path
+                                                  d="M6 18H4C3.46957 18 2.96086 17.7893 2.58579 17.4142C2.21071 17.0391 2 16.5304 2 16V11C2 10.4696 2.21071 9.96086 2.58579 9.58579C2.96086 9.21071 3.46957 9 4 9H20C20.5304 9 21.0391 9.21071 21.4142 9.58579C21.7893 9.96086 22 10.4696 22 11V16C22 16.5304 21.7893 17.0391 21.4142 17.4142C21.0391 17.7893 20.5304 18 20 18H18"
+                                                  stroke="black"
+                                                  stroke-width="2"
+                                                  stroke-linecap="round"
+                                                  stroke-linejoin="round"
+                                             />
+                                             <path
+                                                  d="M18 14H6V22H18V14Z"
+                                                  stroke="black"
+                                                  stroke-width="2"
+                                                  stroke-linecap="round"
+                                                  stroke-linejoin="round"
+                                             />
+                                        </svg>
+                                   </div>
+                                   <p class="mt-4">PRINT</p>
+                              </div>
+                              <div class="text-center">
+                                   <div class="bg-sky-slate-500 p-5 rounded-full">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path
+                                                  d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12"
+                                                  stroke="black"
+                                                  stroke-width="2"
+                                                  stroke-linecap="round"
+                                                  stroke-linejoin="round"
+                                             />
+                                             <path
+                                                  d="M16 6L12 2L8 6"
+                                                  stroke="black"
+                                                  stroke-width="2"
+                                                  stroke-linecap="round"
+                                                  stroke-linejoin="round"
+                                             />
+                                             <path d="M12 2V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                   </div>
+                                   <p class="mt-4">SHARE</p>
+                              </div>
+                         </div>
+                         <div class="w-full bg-sky-slate-500 p-5 flex flex-col h-full justify-between rounded-3xl">
+                              <div>
+                                   <h2 class="text-2xl">Nutrition Information</h2>
+                                   <div class="flex justify-between py-4 border-b border-gray-300">
+                                        <p class="text-gray-400">Calories</p>
+                                        <p>219.9 kcal</p>
+                                   </div>
+                                   <div class="flex justify-between py-4 border-b border-gray-300">
+                                        <p class="text-gray-400">Total Fat</p>
+                                        <p>10.7 g</p>
+                                   </div>
+                                   <div class="flex justify-between py-4 border-b border-gray-300">
+                                        <p class="text-gray-400">Protein</p>
+                                        <p>7.9 g</p>
+                                   </div>
+                                   <div class="flex justify-between py-4 border-b border-gray-300">
+                                        <p class="text-gray-400">Carbohydrate</p>
+                                        <p>23.3 g</p>
+                                   </div>
+                                   <div class="flex justify-between py-4 border-b border-gray-300">
+                                        <p class="text-gray-400">Cholesterol</p>
+                                        <p>37.4 mg</p>
+                                   </div>
+                              </div>
+                              <div class="self-end">
+                                   <p>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="my-[5rem]">
+                    <p class="text-gray-500">
+                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+               </div>
+          </section>
+
+          <!-- Orther -->
+          <section class="p-12">
+               <div class="flex w-full h-auto mt-12 gap-5">
+                    <div class="flex h-auto flex-col w-[60%]">
+                         <h2 class="text-3xl py-5">Ingredients</h2>
+                         <div class="mb-10">
+                              <h4 class="text-lg mt-7">For main dish</h4>
+                              <div>
+                                   <div class="flex gap-3 py-5 border-b border-gray-300">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <circle cx="12" cy="12" r="12" fill="black" />
+                                             <path
+                                                  d="M7 11L11 15L17 9"
+                                                  stroke="white"
+                                                  stroke-width="2"
+                                                  stroke-linecap="round"
+                                                  stroke-linejoin="round"
+                                             />
+                                        </svg>
+                                        <p class="line-through text-gray-200">Lorem ipsum dolor sit amet</p>
+                                   </div>
+                              </div>
+                              <div>
+                                   <div class="flex gap-3 py-5 border-b border-gray-300">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <circle cx="13" cy="13" r="12" stroke="#DBE2E5" stroke-width="2" />
+                                        </svg>
+                                        <p>Lorem ipsum dolor sit amet</p>
+                                   </div>
+                              </div>
+                              <div>
+                                   <div class="flex gap-3 py-5 border-b border-gray-300">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <circle cx="13" cy="13" r="12" stroke="#DBE2E5" stroke-width="2" />
+                                        </svg>
+                                        <p>Lorem ipsum dolor sit amet</p>
+                                   </div>
+                              </div>
+                              <div>
+                                   <div class="flex gap-3 py-5 border-b border-gray-300">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <circle cx="13" cy="13" r="12" stroke="#DBE2E5" stroke-width="2" />
+                                        </svg>
+                                        <p>Lorem ipsum dolor sit amet</p>
+                                   </div>
+                              </div>
+                              <div>
+                                   <div class="flex gap-3 py-5 border-b border-gray-300">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <circle cx="13" cy="13" r="12" stroke="#DBE2E5" stroke-width="2" />
+                                        </svg>
+                                        <p>Lorem ipsum dolor sit amet</p>
+                                   </div>
+                              </div>
+                         </div>
+                         <div>
+                              <h4 class="text-lg">For main dish</h4>
+                              <div>
+                                   <div class="flex gap-3 py-5 border-b border-gray-300">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <circle cx="13" cy="13" r="12" stroke="#DBE2E5" stroke-width="2" />
+                                        </svg>
+                                        <p>Lorem ipsum dolor sit amet</p>
+                                   </div>
+                              </div>
+                              <div>
+                                   <div class="flex gap-3 py-5 border-b border-gray-300">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <circle cx="13" cy="13" r="12" stroke="#DBE2E5" stroke-width="2" />
+                                        </svg>
+                                        <p>Lorem ipsum dolor sit amet</p>
+                                   </div>
+                              </div>
+                              <div>
+                                   <div class="flex gap-3 py-5 border-b border-gray-300">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <circle cx="13" cy="13" r="12" stroke="#DBE2E5" stroke-width="2" />
+                                        </svg>
+                                        <p>Lorem ipsum dolor sit amet</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="flex w-[40%] flex-col">
+                         <h2 class="text-3xl py-5">Other Recipes</h2>
+                         <div class="flex flex-col gap-3">
+                              <div class="flex items-center bg-white">
+                                   <img class="object-cover w-[140px] rounded-lg" src="../../assets/images/blog/food-blog/hire-ads.png" alt="" />
+                                   <div class="flex flex-col justify-between p-4 leading-normal">
+                                        <h5 class="font-bold tracking-tight text-gray-900 dark:text-white">Chicken Meatballs with Cream Cheese</h5>
+                                        <p class="font-normal text-gray-700 dark:text-gray-400">By Andreas Paula</p>
+                                   </div>
+                              </div>
+                              <div class="flex items-center bg-white">
+                                   <img class="object-cover w-[140px] rounded-lg" src="../../assets/images/blog/food-blog/hire-ads.png" alt="" />
+                                   <div class="flex flex-col justify-between p-4 leading-normal">
+                                        <h5 class="font-bold tracking-tight text-gray-900 dark:text-white">Chicken Meatballs with Cream Cheese</h5>
+                                        <p class="font-normal text-gray-700 dark:text-gray-400">By Andreas Paula</p>
+                                   </div>
+                              </div>
+                              <div class="flex items-center bg-white">
+                                   <img class="object-cover w-[140px] rounded-lg" src="../../assets/images/blog/food-blog/hire-ads.png" alt="" />
+                                   <div class="flex flex-col justify-between p-4 leading-normal">
+                                        <h5 class="font-bold tracking-tight text-gray-900 dark:text-white">Chicken Meatballs with Cream Cheese</h5>
+                                        <p class="font-normal text-gray-700 dark:text-gray-400">By Andreas Paula</p>
+                                   </div>
+                              </div>
+                              <div class="max-w-md mt-5">
+                                   <img class="h-full object-cover" src="../../assets/images/tasty-recipes/Ads.png" alt="Ads Picture " />
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <!-- recomment recipes -->
+          <section class="p-12">
+               <h2 class="text-2xl text-center">You may like these recipe too</h2>
+               <div class="flex gap-5 my-15">
+                    <div class="max-w-xs rounded-3xl bg-sky-slate-500">
+                         <img
+                              class="object-center w-full rounded-3xl"
+                              src="../../assets/images/recipes-detail/recomment-recipe/desert.png"
+                              alt="Cheese burger image"
+                         />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white line-clamp-2">
+                                        Big and Juicy Wagyu Beef Cheesebuger
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex gap-1 py-2" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex py-2 ml-4" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="max-w-xs rounded-3xl bg-sky-slate-500">
+                         <img
+                              class="object-center w-full rounded-3xl"
+                              src="../../assets/images/recipes-detail/recomment-recipe/desert.png"
+                              alt="Cheese burger image"
+                         />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white line-clamp-2">
+                                        Big and Juicy Wagyu Beef Cheesebuger
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex py-2" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex py-2 ml-4" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="max-w-xs rounded-3xl bg-sky-slate-500">
+                         <img
+                              class="object-center w-full rounded-3xl"
+                              src="../../assets/images/recipes-detail/recomment-recipe/desert.png"
+                              alt="Cheese burger image"
+                         />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white line-clamp-2">
+                                        Big and Juicy Wagyu Beef Cheesebuger
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex py-2" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex py-2 ml-4" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="max-w-xs rounded-3xl bg-sky-slate-500">
+                         <img
+                              class="object-center w-full rounded-3xl"
+                              src="../../assets/images/recipes-detail/recomment-recipe/desert.png"
+                              alt="Cheese burger image"
+                         />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white line-clamp-2">
+                                        Big and Juicy Wagyu Beef Cheesebuger
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex py-2" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex py-2 ml-4" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <!-- footer -->
+          <footer class="bg-white rounded-lg shadow-sm dark:bg-gray-900 m-4">
+               <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                    <div class="sm:flex sm:items-center sm:justify-between">
+                         <a href="#" class="flex flex-col mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                              <p class="text-2xl font-semibold whitespace-nowrap dark:text-white mb-4">
+                                   Foodieland<span class="text-orange-500">.</span>
+                              </p>
+                              <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetuipisicing elit,</p>
+                         </a>
+                         <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-700 sm:mb-0 dark:text-gray-400">
+                              <li>
+                                   <a href="#" class="hover:underline me-4 md:me-6">Recipes</a>
+                              </li>
+                              <li>
+                                   <a href="#" class="hover:underline me-4 md:me-6">Blog</a>
+                              </li>
+                              <li>
+                                   <a href="#" class="hover:underline me-4 md:me-6">Contact</a>
+                              </li>
+                              <li>
+                                   <a href="#" class="hover:underline">About us</a>
+                              </li>
+                         </ul>
+                    </div>
+                    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                    <div class="flex items-center justify-center relative">
+                         <p class="text-sm text-gray-500">&copy; 2025 Y MENG SEA. Powered by <span class="text-orange-500">KSHRD</span></p>
+                         <div class="px-4 py-2 text-xl cursor-pointer absolute right-10">
+                              <i class="fa-brands fa-facebook-f px-3"></i>
+                              <i class="fa-brands fa-twitter px-3"></i>
+                              <i class="fa-brands fa-instagram px-3"></i>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+     </body>
 </html>
