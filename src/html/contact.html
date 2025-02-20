@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+               integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+               crossorigin="anonymous"
+               referrerpolicy="no-referrer"
+          />
+          <link rel="stylesheet" href="../css/output.css" />
+          <title>Contact</title>
+     </head>
+     <body>
+          <!-- navbar -->
+          <nav class="bg-white dark:bg-gray-900 sticky w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+               <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse"> Foodieland </a>
+                    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                         <div class="px-4 py-2 text-center flex gap-8 text-xl cursor-pointer">
+                              <i class="fa-brands fa-facebook-f"></i>
+                              <i class="fa-brands fa-twitter"></i>
+                              <i class="fa-brands fa-instagram"></i>
+                         </div>
+                         <button
+                              data-collapse-toggle="navbar-sticky"
+                              type="button"
+                              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                              aria-controls="navbar-sticky"
+                              aria-expanded="false"
+                         >
+                              <span class="sr-only">Open main menu</span>
+                              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                   <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M1 1h15M1 7h15M1 13h15"
+                                   />
+                              </svg>
+                         </button>
+                    </div>
+                    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                         <ul
+                              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+                         >
+                              <li>
+                                   <a
+                                        href="#"
+                                        class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                        >Home</a
+                                   >
+                              </li>
+                              <li>
+                                   <a
+                                        href="#"
+                                        class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                        >About</a
+                                   >
+                              </li>
+                              <li>
+                                   <a
+                                        href="#"
+                                        class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                        >Services</a
+                                   >
+                              </li>
+                              <li>
+                                   <a
+                                        href="#"
+                                        class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                        >Contact</a
+                                   >
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </nav>
+          <!-- contact form -->
+          <section class="px-[3rem] my-5">
+               <h1 class="text-4xl text-center">Contact us</h1>
+               <div class="flex mt-12">
+                    <div>
+                         <div class="bg-linear-to-b from-linea-top to-linea-bottom relative rounded-3xl">
+                              <img class="mx-4" src="../../assets/images/contact/cheif.png" alt="" />
+                         </div>
+                    </div>
+                    <form action="#" method="POST" class="mx-auto max-w-xl">
+                         <div class="grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
+                              <div>
+                                   <label for="first-name" class="block text-sm/6 text-gray-500">NAME</label>
+                                   <div class="mt-2.5">
+                                        <input
+                                             type="text"
+                                             name="first-name"
+                                             placeholder="Eter your name..."
+                                             id="first-name"
+                                             autocomplete="given-name"
+                                             class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                        />
+                                   </div>
+                              </div>
+                              <div>
+                                   <label for="last-name" class="block text-sm/6 text-gray-500">EMAIL ADDRESS</label>
+                                   <div class="mt-2.5">
+                                        <input
+                                             type="text"
+                                             name="last-name"
+                                             placeholder="Your email address..."
+                                             id="last-name"
+                                             autocomplete="family-name"
+                                             class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                        />
+                                   </div>
+                              </div>
+                              <div>
+                                   <label for="first-name" class="block text-sm/6 text-gray-500">SUBJECT</label>
+                                   <div class="mt-2.5">
+                                        <input
+                                             type="text"
+                                             name="first-name"
+                                             id="first-name"
+                                             autocomplete="given-name"
+                                             placeholder="Enter subject..."
+                                             class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                        />
+                                   </div>
+                              </div>
+                              <div>
+                                   <label for="last-name" class="block text-sm/6 text-gray-500">ENQUIRY TYPE</label>
+                                   <div class="mt-2.5">
+                                        <input
+                                             type="text"
+                                             name="last-name"
+                                             id="last-name"
+                                             autocomplete="family-name"
+                                             placeholder="Advertising"
+                                             class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                        />
+                                   </div>
+                              </div>
+                              <div class="sm:col-span-2">
+                                   <label for="message" class="block text-sm/6 text-gray-500">MESSAGES</label>
+                                   <div class="mt-2.5">
+                                        <textarea
+                                             name="message"
+                                             id="message"
+                                             rows="6"
+                                             placeholder="Enter your messages..."
+                                             class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                                        ></textarea>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="mt-10">
+                              <button
+                                   type="submit"
+                                   class="block rounded-[.7rem] bg-black px-10 py-3 text-center text-sm text-white shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2"
+                              >
+                                   Submit
+                              </button>
+                         </div>
+                    </form>
+               </div>
+          </section>
+          <!-- inbox section -->
+          <section class="px-[3rem] my-[5rem]">
+               <div class="p-8 py-24 bg-sky-slate-100 rounded-4xl relative">
+                    <img class="absolute rounded-4xl bottom-0 left-0" src="../../assets/images/inbox-blog/fress-veget.png" alt="" />
+                    <img class="absolute rounded-4xl bottom-0 right-0" src="../../assets/images/inbox-blog/Photo-plate.png" alt="" />
+                    <img class="absolute bottom-[20%] right-[20%]" src="../../assets/images/inbox-blog/rucola-png.png" alt="" />
+                    <div class="mx-auto max-w-lg text-center">
+                         <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">Deliciousness to your inbox</h2>
+
+                         <p class="hidden text-gray-500 sm:mt-4 sm:block">
+                              Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut
+                              enim ad minim
+                         </p>
+                    </div>
+
+                    <div class="mx-auto mt-8 max-w-xl">
+                         <form class="max-w-md mx-auto">
+                              <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                              <div class="relative">
+                                   <input
+                                        type="search"
+                                        id="default-search"
+                                        class="block w-full py-6 px-7 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white"
+                                        placeholder="your email address"
+                                        required
+                                   />
+                                   <button
+                                        type="submit"
+                                        class="text-white absolute top-1/2 -translate-y-1/2 right-0 -translate-x-1/7 bg-black focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-10 py-4"
+                                   >
+                                        Subscribe
+                                   </button>
+                              </div>
+                         </form>
+                    </div>
+               </div>
+          </section>
+          <!-- recomment recipes -->
+          <section class="px-[3rem]">
+               <h2 class="text-2xl text-center">You may like these recipe too</h2>
+               <div class="flex gap-5 my-15">
+                    <div class="max-w-xs rounded-3xl bg-sky-slate-500">
+                         <img
+                              class="object-center w-full rounded-3xl"
+                              src="../../assets/images/recipes-detail/recomment-recipe/desert.png"
+                              alt="Cheese burger image"
+                         />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white line-clamp-2">
+                                        Big and Juicy Wagyu Beef Cheesebuger
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex gap-1 py-2" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex py-2 ml-4" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="max-w-xs rounded-3xl bg-sky-slate-500">
+                         <img
+                              class="object-center w-full rounded-3xl"
+                              src="../../assets/images/recipes-detail/recomment-recipe/stack.png"
+                              alt="Cheese burger image"
+                         />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white line-clamp-2">
+                                        Big and Juicy Wagyu Beef Cheesebuger
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex py-2" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex py-2 ml-4" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="max-w-xs rounded-3xl bg-sky-slate-500">
+                         <img
+                              class="object-center w-full rounded-3xl"
+                              src="../../assets/images/recipes-detail/recomment-recipe/rice-cucumber.png"
+                              alt="Cheese burger image"
+                         />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white line-clamp-2">
+                                        Big and Juicy Wagyu Beef Cheesebuger
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex py-2" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex py-2 ml-4" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="max-w-xs rounded-3xl bg-sky-slate-500">
+                         <img
+                              class="object-center w-full rounded-3xl"
+                              src="../../assets/images/recipes-detail/recomment-recipe/taco.png"
+                              alt="Cheese burger image"
+                         />
+                         <div class="p-5">
+                              <a href="#">
+                                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white line-clamp-2">
+                                        Big and Juicy Wagyu Beef Cheesebuger
+                                   </h5>
+                              </a>
+                              <div class="flex my-4">
+                                   <a class="inline-flex py-2" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/Timer.png" alt="timer icon" />
+                                        <p class="text-gray-500 ml-2">30 Minutes</p>
+                                   </a>
+                                   <a class="inline-flex py-2 ml-4" href="#">
+                                        <img class="w-[24px] h-[24px]" src="../../assets/icons/ForkKnife.png" alt="ForkKnife icon" />
+                                        <p class="text-gray-500 ml-2">Snack</p>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <!-- footer -->
+          <footer class="bg-white rounded-lg shadow-sm dark:bg-gray-900 m-4">
+               <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+                    <div class="sm:flex sm:items-center sm:justify-between">
+                         <a href="#" class="flex flex-col mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                              <p class="text-2xl font-semibold whitespace-nowrap dark:text-white mb-4">
+                                   Foodieland<span class="text-orange-500">.</span>
+                              </p>
+                              <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetuipisicing elit,</p>
+                         </a>
+                         <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-700 sm:mb-0 dark:text-gray-400">
+                              <li>
+                                   <a href="#" class="hover:underline me-4 md:me-6">Recipes</a>
+                              </li>
+                              <li>
+                                   <a href="#" class="hover:underline me-4 md:me-6">Blog</a>
+                              </li>
+                              <li>
+                                   <a href="#" class="hover:underline me-4 md:me-6">Contact</a>
+                              </li>
+                              <li>
+                                   <a href="#" class="hover:underline">About us</a>
+                              </li>
+                         </ul>
+                    </div>
+                    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                    <div class="flex items-center justify-center relative">
+                         <p class="text-sm text-gray-500">&copy; 2025 Y MENG SEA. Powered by <span class="text-orange-500">KSHRD</span></p>
+                         <div class="px-4 py-2 text-xl cursor-pointer absolute right-10">
+                              <i class="fa-brands fa-facebook-f px-3"></i>
+                              <i class="fa-brands fa-twitter px-3"></i>
+                              <i class="fa-brands fa-instagram px-3"></i>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+     </body>
+</html>
